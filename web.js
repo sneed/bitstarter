@@ -8,7 +8,7 @@ var express = require('express');
 var app = express();
 app.use(express.logger());
 
-app.get('./index.html', function(request, response) {
+app.get('/', function(request, response) {
   response.send('Hello World from index.html');
 });
 
